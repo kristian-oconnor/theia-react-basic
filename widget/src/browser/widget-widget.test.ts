@@ -29,7 +29,7 @@ describe('WidgetWidget', () => {
 
     it('should inject \'MessageService\'', () => {
         const spy = jest.spyOn(widget as any, 'displayMessage')
-        widget['displayMessage']('xxx');
+        // widget['displayMessage']('xxx');
         expect(spy).toBeCalled();
     });
 

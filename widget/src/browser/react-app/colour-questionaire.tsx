@@ -8,7 +8,7 @@ const Asker = (props: {
     const [colour, setColour] = useState('');
     return (
         <div id='widget-container'>
-            <Paper elevation={3} sx={{ width: '50%', maxWidth: '300px', margin: '30px', padding: '5px', backgroundColor: 'lightblue' }}>
+            <Paper elevation={12} sx={{ width: '50%', maxWidth: '300px', margin: '30px', padding: '5px', backgroundColor: 'lightblue' }}>
                 <Typography variant='h3'>Whats your favourite colour?</Typography>
                 <TextField id="ask-colour-question" label="Colour" variant="standard" value={colour} onChange={(e) => {
                     setColour(e.target.value)

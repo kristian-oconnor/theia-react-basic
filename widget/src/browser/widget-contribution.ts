@@ -46,7 +46,7 @@ export class WidgetContribution extends AbstractViewContribution<WidgetWidget> {
      */
     registerCommands(commands: CommandRegistry): void {
         commands.registerCommand(WidgetCommand, {
-            execute: () => super.openView({ activate: false, reveal: true })
+            execute: () => super.openView({ activate: true, reveal: true, mode: 'tab-after' })
         });
     }
 
